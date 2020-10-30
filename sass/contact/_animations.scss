@@ -1,0 +1,24 @@
+@keyframes pulse {
+    0% {
+        color: rgb(196, 196, 196);
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: rgb(196, 196, 196);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+

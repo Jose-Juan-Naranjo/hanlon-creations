@@ -1,0 +1,73 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 28.75em) {
+      @content;
+    } //460px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}
+@mixin photo-grid-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  .pic-box {
+    font-family: "Arial Narrow Bold", sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 1.3em;
+    background-color: white;
+    border-bottom: 2px solid rgb(177, 0, 0);
+    text-align: center;
+    width: 200px;
+    margin: 20px 30px 20px 30px;
+    .pic-text {
+      padding: 10px 0 10px 0;
+    }
+    img {
+      width: 100%;
+      transition: ease 300ms;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@mixin pic-cat-heading {
+  text-align: center;
+  font-family: "orbitron", sans-serif;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.842);
+  padding: 30px 0 20px 0;
+  h1 {
+    background-image: url(../../images/red-concrete.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  p {
+    color: white;
+  }
+}

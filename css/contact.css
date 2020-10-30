@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Iceberg|Pacifico|Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image:
+   url(../images/logo-blck-whte.png);
+   background-size: 120px;
+}
+.contact p {
+  font-family: cursive;
+  letter-spacing: 1px;
+  width: 95%;
+  padding: 50px 35px;
+  font-size: 1.1rem;
+  transition: all 250ms;
+
+  animation: fadeIn 1.5s ease-in;
+}
+header {
+  color: white;
+  width: 100vw;
+  text-align: center;
+}
+.nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  height:60px;
+  background-image: linear-gradient(
+    black 60%,
+    transparent
+  );
+}
+.nav ul {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.nav ul li {
+  font-size: 1.2rem;
+  list-style: none;
+  color: white;
+  margin-right: 35px;
+}
+.nav ul li a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  animation: pulse 1s infinite;
+  transition: all 250ms;
+}
+.nav ul li a:hover {
+    transform: scale(1.3);
+    color: white;
+    border: 1px solid white; 
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px white;
+}
+body header h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  font-family: 'iceberg', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  color: darkred;
+  transition: all 250ms;
+}
+header h3 {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0 10px 0;
+  font-family: 'Bungee', cursive;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+}
+header a {
+  color: darkred;
+  height: 80px;
+  text-decoration: none;
+  transition:all 100ms;
+}
+header a:hover {
+  text-decoration: none;
+  color: rgb(230, 50, 50);
+}
+form {
+  width: 50%;
+  min-width: 300px;
+  text-align: center;
+}
+.alert-danger {
+  text-align: center;
+}
+.contact {
+  text-align: center;
+  max-width: 50%;
+  padding: 15px;
+}
+.form {
+  height: 100vh;
+  padding: 50px 150px 50px 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+button {
+  padding: 15px;
+}
+.form-box {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: rgba(77, 77, 77, 0.185);
+  border-radius: 15px;
+  box-shadow: 0 0 5px 2px black;
+  transition: all 150ms;
+}
+.form-box:hover {
+  box-shadow: 
+  inset 0 0 15px 8px white,
+  0 0 10px 5px black;
+  background-color: rgba(151, 151, 151, 0.315);
+}
+.buttons {
+  padding: 15px;
+}
+.buttons a {
+  color: darkred;
+  padding: 0 0 0 25px;
+}
+input {
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px auto;
+  width: 60%;
+}
+.form-box input:first-child {
+  margin-top: 28px;
+}
+label {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+}
+textarea {
+  padding: 3px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+hr {
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 900px){
+
+  .header h1 a {
+    font-size: 2.5rem;
+  }
+  .header h1 {
+    padding-bottom: 0;
+  }
+  .header h3 {
+    width: 200px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+    padding: 10px;
+  }
+  .contact p {
+    width: 100%;
+    padding: 0;
+  }
+  .contact {
+    max-width: 600px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.705);
+  }
+  .form {
+    padding: 55px 50px 0 50px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    height:60px;
+    background-image: linear-gradient(
+      black 60%,
+      transparent
+    );
+  }
+  .nav ul {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .nav ul li {
+    font-size: 1.2rem;
+    list-style: none;
+    color: white;
+    margin-right: 45px;
+    margin-left: 25px;
+  }
+  .nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    animation: pulse 1s infinite;
+    transition: all 250ms;
+  }
+  .header h1 a {
+    font-size: 2.5rem;
+  }
+  .header h1 {
+    padding-bottom: 0;
+  }
+  .header h3 {
+    width: 200px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+  }
+  .contact p {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .contact {
+    max-width: 600px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.705);
+  }
+  .form {
+    padding: 15px 50px 0 50px;
+    height: 550px;
+  }
+
+}
+
+@keyframes pulse {
+  0% {
+      color: rgb(58, 58, 58);
+  }
+  50% {
+      color: white;
+  }
+  100% {
+      color: rgb(63, 63, 63);
+  }
+}
