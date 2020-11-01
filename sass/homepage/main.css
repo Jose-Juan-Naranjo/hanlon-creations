@@ -84,36 +84,6 @@ html {
   overflow: hidden;
 }
 
-.header .time-bar {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background-color: white;
-  -webkit-animation: fill-bar 6000ms infinite;
-          animation: fill-bar 6000ms infinite;
-  z-index: 100;
-}
-
-@-webkit-keyframes fill-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes fill-bar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 @media (max-width: 37.5em) {
   .header {
     background-size: 450px;
@@ -419,13 +389,42 @@ html {
 
 .header .header_heading .heading--primary {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-family: "Orbitron", sans-serif;
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
+}
+
+.header .header_heading .heading--primary .time-bar {
+  margin: 0 auto;
+  height: 2px;
+  background-color: red;
+  -webkit-animation: fill-bar 4500ms infinite;
+          animation: fill-bar 4500ms infinite;
+}
+
+@-webkit-keyframes fill-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fill-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @media (max-width: 37.5em) {
